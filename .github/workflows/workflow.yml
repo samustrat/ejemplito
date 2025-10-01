@@ -4,4 +4,6 @@ jobs:
     hello_world:
         runs-on: ubuntu-latest
         steps:
-            - run: python3 /home/runner/work/ejemplito/ejemplito/main.py
+        - name: Clonar el repositorio
+          uses: actions/checkout@v3
+        - run: python3 main.py
